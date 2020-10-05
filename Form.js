@@ -19,11 +19,11 @@ class Form{
         this.button.mousePressed(()=>{
             this.input.hide();
             this.button.hide();
-            player.name =this.input.value();
-            player.update();
+            player.name =this.input.value();            
             playerCount+=1;
             player.updateCount(playerCount);
             player.index = playerCount;
+            player.update();
             this.greeting.html("Hello "+player.name);
             this.greeting.position(100,200);
         });
