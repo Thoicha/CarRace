@@ -47,7 +47,7 @@ class Game{
                 posY+=20;
             }
         }
-        if(keyIsDown(UP_ARROW)&&this.player.index!==null){
+        if(keyIsDown(UP_ARROW)&&player.index!==null){
             player.distance+=50;
             player.update();
         }
